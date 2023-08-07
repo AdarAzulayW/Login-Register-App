@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/nav_Fragments">
+
+    <fragment
+        android:id="@+id/nav_Fragments"
+        android:name="com.example.myfragapp.Nav_Fragments"
+        android:label="fragment_nav__fragments"
+        tools:layout="@layout/fragment_nav__fragments" >
+        <action
+            android:id="@+id/action_nav_Fragments_to_login_Fragment"
+            app:destination="@id/login_Fragment" />
+        <action
+            android:id="@+id/action_nav_Fragments_to_register_Fragment"
+            app:destination="@id/register_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_Fragment"
+        android:name="com.example.myfragapp.Login_Fragment"
+        android:label="fragment_login_"
+        tools:layout="@layout/fragment_login_" >
+        <action
+            android:id="@+id/action_login_Fragment_to_welcome_Fragment"
+            app:destination="@id/welcome_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_Fragment"
+        android:name="com.example.myfragapp.Register_Fragment"
+        android:label="fragment_register_"
+        tools:layout="@layout/fragment_register_" />
+    <fragment
+        android:id="@+id/welcome_Fragment"
+        android:name="com.example.myfragapp.Welcome_Fragment"
+        android:label="fragment_welcome_"
+        tools:layout="@layout/fragment_welcome_" >
+        <action
+            android:id="@+id/action_welcome_Fragment_to_nav_Fragments"
+            app:destination="@id/nav_Fragments" />
+    </fragment>
+</navigation>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Frag App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_login_page">GO TO LOGIN PAGE</string>
+    <string name="go_to_resister_page">GO TO RESISTER PAGE</string>
+    <string name="choose_where_to_go">CHOOSE</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Fragment"
+    android:background="@drawable/backgroud_black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="REGISTER PAGE"
+            android:textColor="#DCDCDC"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        //FULL NAME
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#676767"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="full name"
+                android:paddingLeft="20sp"
+                android:textColor="#C1C1C1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //EMAIL
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#676767" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:paddingLeft="20sp"
+                android:textColor="#C1C1C1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //PASSWORD
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#676767">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:paddingLeft="20sp"
+                android:textColor="#C1C1C1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        //PHONE
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#676767" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:paddingLeft="20sp"
+                android:textColor="#C1C1C1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        //ID
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#676767" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID"
+                android:textColor="#C1C1C1"
+                android:paddingLeft="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/RegisterBtn"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style"
+            android:padding="10sp"
+            android:layout_margin="20sp"
+            android:text="Register"
+            android:textColor="#DCDCDC" />
+
+    </LinearLayout>
+
+</FrameLayout>
